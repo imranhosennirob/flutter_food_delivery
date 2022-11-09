@@ -1,0 +1,4 @@
+#Wed Nov 09 15:08:27 BDT 2022
+base.0=/media/nirob/2A14287A14284B612/AndroidStudioProjects/FlutterProjects/food_delivery/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
