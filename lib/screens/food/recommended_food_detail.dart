@@ -72,22 +72,67 @@ class _RecommendedFoodDetailState extends State<RecommendedFoodDetail> {
       bottomNavigationBar: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              AppIcon(
-                iconSize: 24,
-                iconColor: Colors.white,
-                iconBgColor: Colors.cyan,
-                icon: Icons.remove,
-              ),
-              AppIcon(
+          Container(
+            padding: EdgeInsets.only(
+              left: 50,
+              right: 50,
+              top: 10,
+              bottom: 10,
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                AppIcon(
                   iconSize: 24,
                   iconColor: Colors.white,
                   iconBgColor: Colors.cyan,
-                  icon: Icons.add),
-            ],
-          )
+                  icon: Icons.remove,
+                ),
+                BigText(text: "\$12.88"+" X "+"0"),
+                AppIcon(
+                    iconSize: 24,
+                    iconColor: Colors.white,
+                    iconBgColor: Colors.cyan,
+                    icon: Icons.add),
+              ],
+            ),
+          ),
+          Container(
+            height: 100,
+            padding: EdgeInsets.only(top: 30, bottom: 30, left: 20, right: 20),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(40),
+                  topRight: Radius.circular(40),
+                ),
+                color: Colors.black12),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  padding: EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.white,
+                  ),
+                  child: Icon(
+                    Icons.favorite,
+                    color: Colors.cyan,
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(10),
+                  child: BigText(
+                    text: '\$10 | Add to cart',
+                    color: Colors.white,
+                  ),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.blueGrey),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );

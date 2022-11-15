@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:food_delivery/screens/food/main_food_page.dart';
 import 'package:food_delivery/screens/food/popular_food_detail.dart';
 import 'package:food_delivery/screens/food/recommended_food_detail.dart';
 import 'package:food_delivery/utils/dimensions.dart';
@@ -24,7 +25,7 @@ class _demoState extends State<demo> {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: RecommendedFoodDetail(),
+      home: MainFoodPage(),
     );
   }
 }
